@@ -1,0 +1,104 @@
+/*
+  HEADERS
+*/
+h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 70px;
+}
+
+h2{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*
+  LISTS
+*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: red;
+  font-family:  Arial, Helvetica, sans-serif;;
+}
+
+ul.dropdown {
+  display: block;
+  position: absolute;
+  transform: translateY(100%);
+  z-index: 1;
+  border: blue;
+  min-width: 60px;
+}
+
+.dropdown-hover:hover > ul.dropdown {
+  /* opacity: 1; */
+  background: orange;
+  display: block;
+  /* position: relative; */
+}
+
+.dropdown-hover {
+  /* position: relative; */
+  overflow: visible;
+}
+
+li a {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color:#111;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column{
+  float: left;
+  width: 30%;
+  padding: 10px;
+}
+
+ol {
+  list-style-type: circle;
+}
+#button1 {
+ /* background-color: red;*/
+  color: white;
+  border: 2px solid;
+  font-size: 25px;
+  padding: 12px 28px;
+  border-radius: 15px;
+}
+
+#button1:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  background: red;
+}
+ /*{
+  border: 2px solid green;
+}*/
