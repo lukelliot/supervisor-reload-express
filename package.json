@@ -1,0 +1,23 @@
+{
+  "name": "matts_first_website",
+  "version": "1.0.0",
+  "description": "Check it out ya'll",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/W00ST/first_website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/W00ST/first_website/issues"
+  },
+  "homepage": "https://github.com/W00ST/first_website#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
