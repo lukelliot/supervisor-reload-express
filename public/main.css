@@ -37,7 +37,7 @@ ul {
   font-family:  Arial, Helvetica, sans-serif;;
 }
 
-.navigation > * {
+.navigation > .navigation-container {
   height: inherit;
   float: left;
   display: flex;
@@ -46,11 +46,11 @@ ul {
   cursor: pointer;
 }
 
-.navigation > *:hover {
+.navigation > .navigation-container:hover {
   background: black;
 }
 
-.navigation > * > .navigation-label {
+.navigation > .navigation-container > .navigation-label {
   margin: 0 20px;
 }
 
@@ -71,7 +71,6 @@ ul.dropdown {
 
 .dropdown-hover {
   position: relative;
-  overflow: visible;
 }
 
 ul.dropdown > li {
