@@ -12,7 +12,7 @@ app.set('port', process.env.PORT || PORT)
 
 app.use(express.static(path.join(__dirname, 'public')))
 
-app.get('/', (request, response) => {
+app.get('*', (request, response) => {
   console.log('Incoming Request to route: ', request.path)
 
   fs.readFile("public/first_website_lol.html", function (err, data) {
