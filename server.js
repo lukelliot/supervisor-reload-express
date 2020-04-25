@@ -20,5 +20,5 @@ reload(app, { verbose: true }).then((reloader) => {
     console.log('Web server listening on port ' + app.get('port'))
   })
 }).catch((err) => {
-  console.error('Reload could not start, could not start server/sample app', err)
+  console.error('Reload could not start, could not start app', err)
 })
