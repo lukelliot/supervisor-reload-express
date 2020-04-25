@@ -6,10 +6,10 @@ const PORT = 3000
 
 const app = express()
 
-app.use(express.static(path.join(__dirname, 'stylesheets')));
+app.use(express.static(path.join(__dirname, 'stylesheets')))
 
 app.get('/', (request, response) => {
-  console.log('Incoming Request to Route: ', request.path)
+  console.log('Incoming Request to route: ', request.path)
 
   fs.readFile("first_website_lol.html", function (err, data) {
     if (err) {
@@ -20,9 +20,8 @@ app.get('/', (request, response) => {
     response.writeHead(200, { 'Content-Type': 'text/html' })
     response.write(data)
     response.end()
-  });
+  })
 })
-
 
 app.listen(PORT, (error) => {
   if (error) return console.log('oh fuck we fucked up', error)
