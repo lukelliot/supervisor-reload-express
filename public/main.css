@@ -1,24 +1,4 @@
-/*
-  HEADERS
-*/
-h1{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 70px;
-}
-
-h2{
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-h3{
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-
-/*
-  LISTS
-*/
-
+/* FOUNDATION */
 body {
   margin: 0;
   padding: 0;
@@ -28,16 +8,31 @@ body {
   box-sizing: content-box;
 }
 
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 70px;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
+/* NAVIGATION BAR */
+
 .navigation {
   height: 50px;
   width: 100vw;
-  background: purple;
+  background: red;
   color: white;
   font-family:  Arial, Helvetica, sans-serif;;
 }
@@ -59,11 +54,13 @@ ul {
   margin: 0 20px;
 }
 
+/* DROPDOWN */
+
 ul.dropdown {
   display: none;
   position: absolute;
-  background: orange;
-  border: 1px solid orange;
+  background: red;
+  border: 1px solid red;
   top: 100%;
   left: 0;
 }
@@ -76,6 +73,17 @@ ul.dropdown {
   position: relative;
   overflow: visible;
 }
+
+ul.dropdown > li {
+  margin: 5px 10px;
+  width: max-content;
+}
+
+ul.dropdown > li:hover {
+  color: lightgrey;
+}
+
+/* LISTS */
 
 li a {
   float: left;
@@ -92,6 +100,8 @@ li a {
 li a:hover {
   background-color:#111;
 }
+
+/* MISC */
 
 .row::after {
   content: "";
