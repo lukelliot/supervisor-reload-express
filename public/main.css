@@ -87,7 +87,7 @@ ul.dropdown > li:hover {
 
 /* LISTS */
 
-li a {
+/* li a {
   float: left;
 }
 
@@ -97,11 +97,11 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-}
-
+} */
+/*
 li a:hover {
   background-color:#111;
-}
+} */
 
 /* MISC */
 
@@ -121,7 +121,7 @@ ol {
   list-style-type: circle;
 }
 #button1 {
- /* background-color: red;*/
+  background-color: red;
   color: white;
   border: 2px solid;
   font-size: 25px;
