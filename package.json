@@ -4,7 +4,7 @@
   "description": "Check it out ya'll",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "./node_modules/.bin/supervisor -RV -s -k -e html,js,css -i .git/,node_modules/ -- server.js"
   },
   "repository": {
     "type": "git",
@@ -17,8 +17,11 @@
   },
   "homepage": "https://github.com/W00ST/first_website#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.3",
-    "reload": "^3.0.4"
+    "reload": "^3.0.4",
+    "supervisor": "^0.12.0"
   }
 }

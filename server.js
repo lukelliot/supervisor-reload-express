@@ -1,38 +1,24 @@
 const express = require('express')
 const path = require('path')
 const http = require('http')
-const fs = require('fs')
 const reload = require('reload')
+const logger = require('morgan')
 
-const PORT = 3000
+const PUBLIC_DIR = path.join(__dirname, 'public')
 
 const app = express()
 
-app.set('port', process.env.PORT || PORT)
+app.set('port', process.env.PORT || 3000)
 
-app.use(express.static(path.join(__dirname, 'public')))
-
-app.get('*', (request, response) => {
-  console.log('Incoming Request to route: ', request.path)
-
-  fs.readFile("public/first_website_lol.html", function (err, data) {
-    if (err) {
-      response.writeHead(404)
-      return response.end()
-    }
-
-    response.writeHead(200, { 'Content-Type': 'text/html' })
-    response.write(data)
-    response.end()
-  })
-})
+app.use(express.static(PUBLIC_DIR))
+app.use(logger('dev'))
 
 const server = http.createServer(app)
 
-reload(app).then(function (_) {
-  server.listen(app.get('port'), function () {
+reload(app, { verbose: true }).then((reloader) => {
+  server.listen(app.get('port'), () => {
     console.log('Web server listening on port ' + app.get('port'))
   })
-}).catch(function (err) {
+}).catch((err) => {
   console.error('Reload could not start, could not start server/sample app', err)
 })
