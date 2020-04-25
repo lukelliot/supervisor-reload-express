@@ -63,6 +63,9 @@ ul.dropdown {
   border: 1px solid red;
   top: 100%;
   left: 0;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .dropdown-hover:hover > ul.dropdown {
