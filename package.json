@@ -1,21 +1,21 @@
 {
-  "name": "matts_first_website",
+  "name": "supervisor-reload-express",
   "version": "1.0.0",
-  "description": "Check it out ya'll",
+  "description": "Boilerplate for html/css/js",
   "main": "server.js",
   "scripts": {
     "start": "npm i && ./node_modules/.bin/supervisor -RV -s -k -e html,js,css -i .git/,node_modules/ -- server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/W00ST/first_website.git"
+    "url": "git+https://github.com/lukelliot/supervisor-reload-express.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/W00ST/first_website/issues"
+    "url": "https://github.com/lukelliot/supervisor-reload-express/issues"
   },
-  "homepage": "https://github.com/W00ST/first_website#readme",
+  "homepage": "https://github.com/lukelliot/supervisor-reload-express#readme",
   "dependencies": {
     "express": "^4.17.1",
     "morgan": "^1.10.0",
