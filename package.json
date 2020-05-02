@@ -4,7 +4,7 @@
   "description": "Check it out ya'll",
   "main": "server.js",
   "scripts": {
-    "start": "./node_modules/.bin/supervisor -RV -s -k -e html,js,css -i .git/,node_modules/ -- server.js"
+    "start": "npm i && ./node_modules/.bin/supervisor -RV -s -k -e html,js,css -i .git/,node_modules/ -- server.js"
   },
   "repository": {
     "type": "git",
