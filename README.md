@@ -8,7 +8,7 @@ Boilerplate for html/css/js
 
 The `/` endpoint will be routed to the index.html file by default.
 
-## How to Start
+## Development Server
 
 The development server can be started with `npm run start` on `http://localhost:3000`.
 
