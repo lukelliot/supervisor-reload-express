@@ -7,3 +7,7 @@ body {
 * {
   box-sizing: content-box;
 }
+
+h1 {
+  color: purple;
+}

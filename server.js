@@ -5,12 +5,14 @@ const reload = require('reload')
 const logger = require('morgan')
 
 const PUBLIC_DIR = path.join(__dirname, 'public')
+const SRC_DIR = path.join(__dirname, 'src')
 
 const app = express()
 
 app.set('port', process.env.PORT || 3000)
 
 app.use(express.static(PUBLIC_DIR))
+app.use(express.static(SRC_DIR))
 app.use(logger('dev'))
 
 const server = http.createServer(app)
